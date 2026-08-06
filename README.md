@@ -77,7 +77,7 @@ poblada y la `c:\...` vacía (`"mcpServers": {}`).
 3. En vez de correr el comando yo mismo, pedirle a Claude en el chat que lo ejecute él con su propia
    herramienta de terminal (Bash/PowerShell tool), por ejemplo:
 ```
-Por favor, ejecuta este comando usando tu herramienta de terminal interna (terminal/bash tool) para registrar mi servidor MCP: claude mcp add powerbi-modeling-mcp -- "C:\Users\luis.meza\.vscode\extensions\analysis-services.powerbi-modeling-mcp-0.4.0-win32-x64\server\powerbi-modeling-mcp.exe" --start --skip-confirmation
+"Por favor, ejecuta este comando usando tu herramienta de terminal interna (terminal/bash tool) para registrar mi servidor MCP: claude mcp add powerbi-modeling-mcp -- "C:\Users\luis.meza\.vscode\extensions\analysis-services.powerbi-modeling-mcp-0.4.0-win32-x64\server\powerbi-modeling-mcp.exe" --start --skip-confirmation"
 ```
 
 
@@ -85,7 +85,7 @@ Por favor, ejecuta este comando usando tu herramienta de terminal interna (termi
    de VS Code, y el registro queda guardado en el casillero correcto del JSON.
 
 **Método 2 — quirúrgico (editar el JSON a mano):**
-1. Abrir `C:\Users\luis.meza\.claude.json` (archivo oculto) con el Bloc de notas o VS Code.
+1. Abrir  `C:\Users\luis.meza\.claude.json` (archivo oculto, OJO en Luis Meza debes ver el documento no entrar a la carpeta de claude) con el Bloc de notas o VS Code.
 2. Buscar la sección `projects` y localizar los dos bloques con la misma ruta: uno con `C:` y otro
    con `c:`.
 3. El bloque `C:` tiene el `mcpServers` poblado; el bloque `c:` tiene `"mcpServers": {}` vacío.
@@ -99,5 +99,4 @@ Por favor, ejecuta este comando usando tu herramienta de terminal interna (termi
   cambio aunque el JSON ya esté corregido.
 
 
-  Nota: Para remover podemos usar `claude mcp remove powerbi-modeling-mcp`
-
+Nota: Para remover podemos usar `claude mcp remove powerbi-modeling-mcp`

@@ -77,7 +77,7 @@ poblada y la `c:\...` vacía (`"mcpServers": {}`).
 3. En vez de correr el comando yo mismo, pedirle a Claude en el chat que lo ejecute él con su propia
    herramienta de terminal (Bash/PowerShell tool), por ejemplo:
 ```
-"Por favor, ejecuta este comando usando tu herramienta de terminal interna (terminal/bash tool) para registrar mi servidor MCP: claude mcp add powerbi-modeling-mcp -- "C:\Users\luis.meza\.vscode\extensions\analysis-services.powerbi-modeling-mcp-0.4.0-win32-x64\server\powerbi-modeling-mcp.exe" --start --skip-confirmation"
+Por favor, ejecuta este comando usando tu herramienta de terminal interna (terminal/bash tool) para registrar mi servidor MCP: claude mcp add powerbi-modeling-mcp -- "C:\Users\luis.meza\.vscode\extensions\analysis-services.powerbi-modeling-mcp-0.4.0-win32-x64\server\powerbi-modeling-mcp.exe" --start --skip-confirmation
 ```
 
 
@@ -97,4 +97,7 @@ poblada y la `c:\...` vacía (`"mcpServers": {}`).
   proceso viejo del servidor MCP colgado en memoria.
 - Abrir una conversación completamente **nueva** de Claude Code — la sesión ya abierta no recoge el
   cambio aunque el JSON ya esté corregido.
+
+
+  Nota: Para remover podemos usar `claude mcp remove powerbi-modeling-mcp`
 
